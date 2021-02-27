@@ -25,16 +25,7 @@ class ApiCalls implements IApiCalls {
     this.AXIOS_NO_DATA = 2;
   }
 
-
-  myProfile = async () => {
-    let _NetworkResponse = new NetworkResponse()
-    let response = await httpClient.post(this.server_link + "me")
-    _NetworkResponse.data = response.data;
-    _NetworkResponse.status = response.status;
-    return _NetworkResponse;
-
-
-  }
+ 
 
   register = async (name: string, email: string, password: string,) => {
 
