@@ -1,12 +1,11 @@
 import React, { useContext, useReducer } from 'react';
-import { User, VideoInfo } from '../models';
+import { User } from '../models';
 import { reducer, Action } from './reducer';
 
 export interface StateContext {
   isAuthenticated: boolean;
   token?: string;
   user?:User;
-  videos?:VideoInfo[];
 }
 
 export interface Store {
